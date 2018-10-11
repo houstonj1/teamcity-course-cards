@@ -25,7 +25,15 @@ module.exports = function (config) {
 
     frameworks: ["jasmine"],
 
-    browsers: ["Chrome"],
+    browsers: ['Chrome'],
+
+    customLaunchers: {
+      MyHeadlessChrome: {
+        base: 'Chrome',
+        flags: ['--no-sandbox', '--disable-extensions',
+                '--no-first-run', '--disable-background-networking']
+      }
+    },
 
   });
 };
