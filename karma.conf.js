@@ -30,7 +30,7 @@ module.exports = function (config) {
     customLaunchers: {
       MyHeadlessChrome: {
         base: 'Chrome',
-        flags: ['--no-sandbox', '--headless']
+        flags: ['--no-sandbox', '--headless', '--password-store=basic']
       }
     },
 
